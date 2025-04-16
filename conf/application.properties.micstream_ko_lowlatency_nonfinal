@@ -1,0 +1,28 @@
+
+## application.properties.micstream_ko_lowlatency_nonfinal
+## mode := micstream | filestream | micstream_websocket
+recognition.mode=micstream
+recognition.apiKey=test
+recognition.languageCode=ko
+recognition.lowLatency=true
+recognition.nonfinal=true
+recognition.speakerDiarization=false
+recognition.minSpeaker=0
+recognition.maxSpeaker=0
+recognition.boostWords=
+recognition.defaultBoostAmount=0
+
+connector.useSSL=false
+connector.host=127.0.0.1
+connector.port=8080
+
+connector.useProxy=false
+connector.proxyHost=127.0.0.1
+connector.proxyPort=8080
+
+file.audio=
+
+stream.format=pcm_s16le
+stream.sampleRate=16000
+stream.channels=1
+

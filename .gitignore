@@ -1,0 +1,33 @@
+# Maven build
+/target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+/nbproject/private/
+/build/
+/dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# 기타
+*.class
+*.jar
+*.war
+*.ear
+
+# VS Code
+.vscode/

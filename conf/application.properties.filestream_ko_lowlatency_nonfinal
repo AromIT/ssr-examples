@@ -1,0 +1,27 @@
+## application.properties.filestream_ko_lowlatency_nonfinal
+## mode := micstream | filestream | micstream_websocket
+recognition.mode=filestream
+recognition.apiKey=test
+recognition.languageCode=ko
+recognition.lowLatency=true
+recognition.nonfinal=true
+recognition.speakerDiarization=false
+recognition.minSpeaker=4
+recognition.maxSpeaker=4
+recognition.boostWords=
+recognition.defaultBoostAmount=0
+
+connector.useSSL=false
+connector.host=127.0.0.1
+connector.port=8080
+
+connector.useProxy=false
+connector.proxyHost=127.0.0.1
+connector.proxyPort=8080
+
+file.audio=src/main/resources/audio/test_audio_ko.mp3
+
+stream.format=
+stream.sampleRate=0
+stream.channels=1
+
