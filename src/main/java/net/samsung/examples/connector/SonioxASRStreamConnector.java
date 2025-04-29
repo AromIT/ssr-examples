@@ -94,6 +94,12 @@ public class SonioxASRStreamConnector extends SonioxASRConnector {
 
             @Override
             public void onError(Throwable t) {
+                if (finalSpeech.length() > 0) {
+                    // logging
+                    logger.info("speaker=? final=1 speech={}/", finalSpeech);
+                    finalSpeech = new StringBuilder();
+                }
+
                 io.grpc.Status status = io.grpc.Status.fromThrowable(t);
                 logger.error("onError: {}", status);
             }
